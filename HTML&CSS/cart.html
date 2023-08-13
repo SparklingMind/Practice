@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cart.css">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <table>
+            <thead><!--테이블 헤드를 표시. 기능상 차이 x-->
+                <tr>
+                    <th><p>aaaa</p><p>bbbb</p></th>
+                    <td style="vertical-align: top">2222</td>
+                    <td style="vertical-align: top">3333</td>
+                    <!--vertical-align은 inline/inline-block 요소 간의 세로 정렬을 지정하는 속성이다. top, middle, bottom 값을 지정할 수 있다. 기본값은 baseline이다.-->
+                </tr>
+            </thead>
+            <tbody><!--테이블의 본문을 표시. 기능상 차이 x-->
+                <tr>
+                    <th>1</th>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+            </tbody>
+            
+            
+        </table>
+    </div>
+    <div>
+        <p style="font-size: 50px">greetings<span style="font-size: 20px; 
+        vertical-align: middle;">안녕</span></p>
+    </div>
+    <div> <img src="https://mdn.mozillademos.org/files/12245/frame_image.svg" width="32" height="32"> 
+        <label for="" style="vertical-align: top;">image with a default alignment.</label>
+    </div>
+
+    <div class = container>
+        <div class = shopping-cart>
+            <h2>Your shopping cart</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2">Item</th>
+                        <!--colspan을 이용해 하나의 셀로 합치려면 th나 td에 colspan="숫자"를 추가하면 된다.
+                        예를 들면, <td colspan="2">는 두 개의 셀을 하나로 합친다. -->
+                        <th>Amount</th>
+                        <th>Price</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td colspan="5"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div>
+                <a href="">Edit your shopping cart</a>
+                <button class="payment-button">Choose your payment method</button>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

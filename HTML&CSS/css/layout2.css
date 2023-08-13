@@ -1,0 +1,100 @@
+/*브라우저 간 호환성 이슈를 해결하기 위해 css reset을 사용한다. nomalize.css를 많이 사용한다.*/
+div {
+    box-sizing : border-box; /*박스의 폭은 border까지 포함이다. padding을 포함하지 않는다.*/
+    /*box-sizing : content-box; /*박스의 폭은 padding 안쪽이다.*/
+}
+
+body {
+    margin: 0;
+}
+
+.main-background{
+    background-image: url(../images/city.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 500px;
+    width: 100%;
+    position: relative;
+    z-index: -1;
+    padding-top: 1px;
+    text-align: center;
+}
+
+.main-title{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff;
+    margin-top: 100px;
+}
+
+.main-content{
+    position: relative;
+    color: #fff;
+}
+
+
+
+.main-button{
+    /* 부모요소인 main-background를 기준으로 가운데 정렬 */
+    
+    position: absolute;
+    bottom: 150px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 150px;
+    z-index: 5;
+    
+    
+    /* position 속성들.
+    ->float와 비슷하게 position속성 쓰면 공중에 띄운다.
+    position: static은 기본값. 원래 위치에 배치. 좌표이동 불가.
+    position: fixed는 브라우저 창(현재 화면) 기준으로 좌표이동 가능.
+    position: absolute는 position:relative 속성 가진 부모 요소 기준으로 좌표이동 가능.
+    position: relative는 현재 위치 기준으로 좌표 이동. 마이너스도 가능하다.*/
+    
+    padding: 15px;
+    font-size: 20px;
+    background: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.main-intro{
+    position: relative;
+    z-index: 1; /*z-index는 position속성이 있어야 적용된다. 
+    z-index는 레이어의 순서를 정해준다. 숫자가 클수록 위에 쌓인다.
+    .main-button 요소와 .main-intro 요소가 같은 stacking context
+    (즉, 동일한 부모 요소)를 공유해야만 제대로 쌓인다*/
+    padding: 5px;
+    top: 170px;
+    margin: auto;
+    width: 80%; /*부모요소의 80%. 반응형 레이아웃에 많이 사용.*/
+    max-width: 600px; /*최대 600px까지만 늘어난다. 반응형 레이아웃에 많이 사용.*/
+    text-align: center;
+    background-color: rgb(238, 236, 236);
+    border-radius: 3px;
+    
+}
+
+.login-form {
+    position: relative;
+    z-index: 1;
+    padding: 5px;
+    top: 450px;
+    margin: auto;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    background-color: rgb(238, 236, 236);
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+input[type="text"], input[type="password"],input[type="email"]{ 
+    /*input요소 한 꺼번에 바꾸기. type이 text인 것과 password인 것을 선택한다.*/
+    font-size: 15px;
+    border: none;
+    border-radius: 3px;
+}

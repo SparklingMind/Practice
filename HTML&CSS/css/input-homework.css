@@ -1,0 +1,78 @@
+div, input, textarea, button {
+    box-sizing: border-box;
+}
+p {
+    margin: 0;
+}
+
+.container {
+    background-color: rgb(32, 32, 32);
+    padding: 30px;
+}
+.contactUs{
+    padding: 20px;
+    width: 50%;
+    max-width: 700px;
+    height: 500px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+.send-button {
+    width: 100px;
+    height: 30px;
+    padding: 0 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: orange;
+    color: white;
+    display: block;
+    margin-left: auto; /*부모요소 기준으로 오른쪽 정렬*/
+    
+}
+/*재사용가능한 클래스 어떻게 만들지 생각하고 만들기->초보와 고수의 차이.
+그 때 그 때 각자 다른 클래스 만들지 말기*/
+
+.w-100 {
+    width: 100%;
+    float: left;
+    padding: 10px;
+}
+
+.w-50 {
+    width: 50%;
+    float: left;
+    padding: 10px;
+}
+
+.checkbox {
+    display: inline-block;
+}
+
+input[type="checkbox"] {
+    width: 10px;
+    color: #949494;
+    border: none;
+    margin: 5px;
+    padding: 0;
+}
+
+input[type="text"], input[type="email"]{
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+   
+}

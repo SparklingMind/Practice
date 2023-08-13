@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/input-homework.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="contactUs">
+            <h2>contact us</h2>
+            <form? action="">
+                <div class="w-100">
+                    <p>Your Email</p>
+                    <input type="email" placeholder="email@example.com">
+                </div>
+                <div class="w-50" style="float:left; width: 50%;">
+                    <p>First name</p>
+                    <input type="text" placeholder="First name">
+                </div>
+                <div class="w-50" style="float:right; width: 50%;">
+                    <p>Last name</p>
+                    <input type="text" placeholder="Last name">
+                </div>
+                <div style="clear:both;" class="w-100">
+                    <p>Message</p>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                </div>
+                <div>
+                    <!--label태그는 inline태그이고 label 부분을 누르면 input을 누른 것으로 간주한다.
+                    혹은 input의 설명에 p태그 대신에 사용한다.-->
+                    <input id='sub' type="checkbox">
+                    <label for="sub">subscribe</label>
+                    <button class="send-button">SEND</button>
+                </div>
+            </form>
+        </div>
+    </div>    
+</body>
+</html>
